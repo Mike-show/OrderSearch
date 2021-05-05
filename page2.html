@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <title>Order search</title>
+        <meta charset="optima">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="page2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="page2.css"/>
+    </head>
+
+    <body>
+        <div id="ttl">
+            <p id="tp">Order Search</p>
+        </div>
+
+        <div id="input">
+            <form>
+                <p><label class="label_input" for = "searchtype">Search by</label></p>
+                <select id = "searchtype", value = "oderid">
+                    <option value = "orderid">Order ID</option>
+                    <option value = "customerid">Customer ID</option>
+                    <option value = "customer">Customer</option>
+                </select>
+                <br/>
+                <p><label class="label_input" for = "searchvalue">Input</label></p>
+                <input id = "searchvalue", type = "text" >
+                <input id = "search", type = "button", value = "Search" onclick = "ordersearch()"">
+            </form>
+        </div>
+
+        <div id="output">
+                <!--startprint-->
+            <div id="tableframe1">
+                <p id="basicinfo"></p>
+            </div>
+
+            <div id="tableframe2">
+                <p id="proinfo"></p>
+            </div>
+            <!--endprint-->
+            <div id="subt">
+                <p id="submit_button"></p>
+            </div>
+            <div id="ptbt">
+                <p id="print_button"></p>
+            </div>
+        </div>
+    </body>
+</HTML>
